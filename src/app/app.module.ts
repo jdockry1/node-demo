@@ -5,7 +5,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CountryService } from './country.service';
 import { AllCountriesComponent } from './all-countries/all-countries.component';
-import { CountryDetailComponent } from './country-detail/country-detail.component'
+import { CountryDetailComponent } from './country-detail/country-detail.component';
+
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { CountryDetailComponent } from './country-detail/country-detail.componen
     CountryDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [CountryService],
   bootstrap: [AppComponent]
