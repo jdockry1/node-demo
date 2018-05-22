@@ -3,12 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { CountryService } from './country.service'
+import { CountryService } from './country.service';
+import { AllCountriesComponent } from './all-countries/all-countries.component';
+import { CountryDetailComponent } from './country-detail/country-detail.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AllCountriesComponent,
+    CountryDetailComponent
   ],
   imports: [
     BrowserModule
